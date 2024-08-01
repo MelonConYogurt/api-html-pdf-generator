@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+    <style>
+    * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        -webkit-font-smoothing: antialiased;
+        background: rgb(255, 255, 255);
+        -webkit-print-color-adjust: exact; 
+    }
+
+    h1 {
+        font-size: 3.125rem;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        padding: 30px 0;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .text-important {
+        font-weight: bold; 
+        font-size: 1.2em; 
+        color: #333; 
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .table-wrapper {
+        margin: 10px 70px 70px;
+        box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table {
+        border-radius: 10px;
+        font-size: .75rem;
+        font-weight: normal;
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        background-color: white;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .section-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 1.875rem;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .section-info img {
+        border-radius: 10px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .section-info-div-izquierda {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .section-info-div-derecha {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table td, .fl-table th {
+        text-align: center;
+        padding: 8px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table td {
+        border-right: 1px solid #f8f8f8;
+        font-size: 12px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table thead th {
+        color: #ffffff;
+        background: #363737;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table tr:nth-child(even) {
+        background: #F8F8F8;
+        -webkit-print-color-adjust: exact; 
+    }
+
+</style>
+<body>
+   <section class="section-info">
+        <div class="section-info-div-izquierda">
+            <h1>FACTURA</h1>
+            <table class="fl-table">
+                    <tr>
+                        <td>Fecha:</td>
+                        <td>2024-08-01</td>
+                    </tr>
+                    <tr>
+                        <td class="text-important">Fecha de vencimiento:</td>
+                        <td class="text-important">2024-08-31</td>
+                    </tr>
+                    <tr>
+                        <td class="text-important">Total venta:</td>
+                        <td class="text-important">5249.65</td>
+                    </tr>
+            </table>
+        </div>
+        <div class="section-info-div-derecha">
+            <img src="https://avatars.githubusercontent.com/u/141779507?v=4" width="200" height="200" alt="Logo">
+            <table class="fl-table" >
+                <tr>
+                    <td>Empresa:</td>
+                    <td class="text-important">Tech Solusdasdffgsdftions</td>
+                </tr>
+                <tr>
+                    <td>Nombre del vendedor:</td>
+                    <td class="text-important">Carlos Marsdfgasdfstínez (11223344)</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <table class="fl-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Serial number</th>
+                <th>Units</th>
+                <th>Unit price</th>
+                <th>Total price</th>
+            </tr> 
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>Smartphone XYZ</td>
+                <td>12345</td>
+                <td>10</td>
+                <td>299.99</td>
+                <td>2999.9</td>
+            </tr>
+            
+            <tr>
+                <td>Wireless Headphones ABC</td>
+                <td>67890</td>
+                <td>25</td>
+                <td>89.99</td>
+                <td>2249.75</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>

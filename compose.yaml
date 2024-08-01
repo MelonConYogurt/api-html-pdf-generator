@@ -1,0 +1,18 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - chrome
+
+  chrome:
+    image: browserless/chrome
+    ports:
+      - "3000:3000"
+    environment:
+      - PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome
