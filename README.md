@@ -9,5 +9,5 @@ El enlace anterior te llevará a un ejemplo de factura generada por el sistema.
 
 <h1>PDF de prueba con 20 items:</h1>
 
-<img src="https://github.com/user-attachments/assets/d557b6cb-5ae2-4348-9d5a-5c78b16cbbd9" alt="Factura_pruebas" width="500"/>
+<img src="https://github.com/user-attachments/assets/d557b6cb-5ae2-4348-9d5a-5c78b16cbbd9" alt="Factura_pruebas" />
 
