@@ -192,7 +192,7 @@ def generate(products, client, seller):
             "date": datetime.datetime.now().strftime("%Y-%m-%d"),
             "due_date": (datetime.datetime.now() + datetime.timedelta(days=30)).strftime("%Y-%m-%d"),
             "total": f"{total_invoice:.2f}",
-            "company_logo": "https://avatars.githubusercontent.com/u/141779507?v=4",
+            "company_logo": "https://github.com/user-attachments/assets/d715a40f-5e77-4135-b636-d664b59b17b4",
             "company_name": client.company_name,
             "salesperson_name": f"{seller.full_name} ({seller.id_number})"
         }
