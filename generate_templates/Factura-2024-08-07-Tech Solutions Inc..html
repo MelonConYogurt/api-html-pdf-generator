@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+    <style>
+    * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        -webkit-font-smoothing: antialiased;
+        background: rgb(255, 255, 255);
+        -webkit-print-color-adjust: exact; 
+    }
+
+    h1 {
+        font-size: 3.125rem;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        padding: 30px 0;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .text-important {
+        font-weight: bold; 
+        font-size: 1.2em; 
+        color: #333; 
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .table-wrapper {
+        margin: 10px 70px 70px;
+        box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table {
+        border-radius: 10px;
+        font-size: .75rem;
+        font-weight: normal;
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        background-color: white;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .section-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 1.875rem;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .section-info img {
+        border-radius: 10px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .section-info-div-izquierda {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .section-info-div-derecha {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table td, .fl-table th {
+        text-align: center;
+        padding: 8px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table td {
+        border-right: 1px solid #f8f8f8;
+        font-size: 12px;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table thead th {
+        color: #ffffff;
+        background: #363737;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    .fl-table tr:nth-child(even) {
+        background: #F8F8F8;
+        -webkit-print-color-adjust: exact; 
+    }
+
+</style>
+<body>
+   <section class="section-info">
+        <div class="section-info-div-izquierda">
+            <h1>FACTURA</h1>
+            <table class="fl-table">
+                    <tr>
+                        <td>Fecha:</td>
+                        <td>2024-08-07</td>
+                    </tr>
+                    <tr>
+                        <td class="text-important">Fecha de vencimiento:</td>
+                        <td class="text-important">2024-09-06</td>
+                    </tr>
+                    <tr>
+                        <td class="text-important">Total venta:</td>
+                        <td class="text-important">40198.60</td>
+                    </tr>
+            </table>
+        </div>
+        <div class="section-info-div-derecha">
+            <img src="https://github.com/user-attachments/assets/d715a40f-5e77-4135-b636-d664b59b17b4" width="200" height="200" alt="Logo">
+            <table class="fl-table" >
+                <tr>
+                    <td>Empresa:</td>
+                    <td class="text-important">Tech Solutions Inc.</td>
+                </tr>
+                <tr>
+                    <td>Nombre del vendedor:</td>
+                    <td class="text-important">Jane Smith (11223344)</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <table class="fl-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Serial number</th>
+                <th>Units</th>
+                <th>Unit price</th>
+                <th>Total price</th>
+            </tr> 
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>Laptop</td>
+                <td>123456</td>
+                <td>10</td>
+                <td>999.99</td>
+                <td>9999.9</td>
+            </tr>
+            
+            <tr>
+                <td>Smartphone</td>
+                <td>234567</td>
+                <td>25</td>
+                <td>499.99</td>
+                <td>12499.75</td>
+            </tr>
+            
+            <tr>
+                <td>Headphones</td>
+                <td>345678</td>
+                <td>50</td>
+                <td>199.99</td>
+                <td>9999.5</td>
+            </tr>
+            
+            <tr>
+                <td>Monitor</td>
+                <td>456789</td>
+                <td>15</td>
+                <td>299.99</td>
+                <td>4499.85</td>
+            </tr>
+            
+            <tr>
+                <td>Keyboard</td>
+                <td>567890</td>
+                <td>40</td>
+                <td>79.99</td>
+                <td>3199.6</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
