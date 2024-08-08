@@ -42,7 +42,8 @@ const [,, htmlPath, pdfPath] = process.argv;
 
 
 
+
 <h1>PDF de prueba con 20 items:</h1>
 
-<img src="https://github.com/user-attachments/assets/d557b6cb-5ae2-4348-9d5a-5c78b16cbbd9" alt="Factura_pruebas" />
+<img src="https://github.com/user-attachments/files/16537269/Factura-2024-08-07-Tech.Solutions.Inc.pdf" alt="Factura_pruebas" />
 
